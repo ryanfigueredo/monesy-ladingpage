@@ -27,9 +27,19 @@ body::-webkit-scrollbar {
 
 body {
     
-    background: #121214 /*url("./assets/img/gif.gif")*/ no-repeat ; 
+    background: #121214 url("../img/bg.svg") no-repeat ; 
     background-size: 100%;
+    height: 100%;
     
+}
+
+.page-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
 }
 
 .wrap{
@@ -42,7 +52,6 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: auto;
   }
   
@@ -53,10 +62,8 @@ body {
 .button{
     font-family: 'Ubuntu', sans-serif, 'bold';
     padding: 20px 20px;
-    font-size: 16px;
+    font-size: 20px;
    
-    
-
     color: #FFFFFF;
 
     display: flex;
@@ -90,10 +97,7 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-.container {
-margin: 00% 0% 10% 0%;
 
-}
 
 .logo {
     display: flex;
@@ -101,14 +105,26 @@ margin: 00% 0% 10% 0%;
     justify-content: center;
 }
 
+
+
 .logomarca {
-    margin-top: 6%;
-    max-width: 250px;
+    margin-top: 30%;
+    width: 450px
+}
+
+.logomarca-sub{
+    width: 160px;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.logomarca:hover {
+    width: 460px
 }
 
 
 .buy_now {
-    margin-top: 5%;
+    margin-top: 20px;
 
     display: flex;
     align-items: center;
@@ -153,13 +169,34 @@ margin: 00% 0% 10% 0%;
 }
 
 
-.about {
-    padding: 10%;
-    min-width: 80%;
+.about-sobre{
+
+    margin-top: 20px;
+    background-color: #121214;
+    border-radius: 20px;
+
+    padding: 50px;
+    min-width: 300px;
     text-align: justify;
+
+    
+    max-width: 750px;
 }
 
-.about-title {
+.about-plans{
+
+    background-color: #121214;
+    border-radius: 20px;
+
+    padding: 50px;
+    min-width: 500px;
+    text-align: justify;
+
+    
+    max-width: 750px;
+}
+
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -167,18 +204,33 @@ margin: 00% 0% 10% 0%;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 48px;
 
     color: #FFFFFF;
 }
 
-.about-text {
-    color: white;
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+p {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     text-align: justify;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 32px;
     letter-spacing: 0em;
 }
@@ -189,7 +241,8 @@ margin: 00% 0% 10% 0%;
 .about-text-secondary {
     font-family: 'Ubuntu', sans-serif;
 
-    font-size: 16px;
+
+    font-size: 26px;
     font-weight: 500;
     text-align: justify;
     line-height: 32px;
@@ -211,4 +264,51 @@ margin: 00% 0% 10% 0%;
 
     align-items: center;
     color: rgb(78, 78, 78);
+}
+
+ul {
+    font-family: 'Ubuntu', sans-serif, 'bold';
+    color: white;
+
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.skript {
+    margin-top: 2px;
+    height: 24px;
+    width: 24px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gosth{
+    margin-left: 0;
+    height: 28px;
+    width: 28px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+span {
+    color: #818181;
+}
+
+strong {
+     font-size: 25px;
 }
