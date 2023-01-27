@@ -9,4 +9,6 @@
 
 <a href="https://monesy.solutions"> Monesy Solutions </a>
 
+<img src="https://cdn.discordapp.com/attachments/946331472086831125/1068344285843427428/image.png" />
+
 🚀
